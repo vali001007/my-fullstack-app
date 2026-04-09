@@ -6,7 +6,11 @@ const fs = require('fs');
 
 const app = express();
 app.use(cors());
-
+// 👇 【核心新增代码】👇
+// 告诉服务器：请把当前文件夹（__dirname）当成静态资源目录
+// 只要有人访问主页，就自动把里面的 index.html 发给他！
+app.use(express.static(__dirname));
+// 👆 【核心新增代码】👆
 const dataFile = './database.json';
 
 if (!fs.existsSync(dataFile)) {
