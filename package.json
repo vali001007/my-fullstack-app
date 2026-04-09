@@ -1,20 +1,13 @@
 {
-  "name": "my-first-server",
+  "name": "my-fullstack-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "小白全栈进阶之路的后端服务器",
+  "main": "server.js",
   "scripts": {
-   "scripts": {
-     "start": "node server.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
   }
 }
