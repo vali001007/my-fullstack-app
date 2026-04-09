@@ -17,7 +17,7 @@ const likeCountDisplay = document.getElementById('like-count');
 
 likeBtn.addEventListener('click', function() {
     // 前端只负责派 fetch 去要数据，不负责写文件
-    fetch('http://localhost:3000/api/get-likes')
+    fetch('api/get-likes')
         .then(function(response) {
             return response.json(); 
         })
