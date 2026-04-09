@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "小白全栈进阶之路的后端服务器",
   "main": "server.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "start": "node server.js"
   },
